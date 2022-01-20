@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
+.bg {
+    background: linear-gradient(to right, #1e5799 0%,#207cca 0%,#a530ff 100%,#a530ff 100%,#2989d8 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: auto;
+    width: auto;
+}
+
+.logo {
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 15%;
+}
+
+html,body{
+    height:auto;
+  }
+  body{
+    text-align:center;
+  }
+  body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  
+button{
+    background:#9900ff;
+    border-radius: 10px;
+    color:#fff;
+    border:none;
+    position:relative;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    height:50px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:rgb(27, 56, 182);
+    color:#ffffff;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #ffffff;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
